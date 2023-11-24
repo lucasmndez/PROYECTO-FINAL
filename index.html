@@ -1,0 +1,234 @@
+<!Doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>oportunidad.uy</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+</head>
+
+<body>
+    <div class="Contenido">
+        <nav>
+            <div class="Logo">
+                <img src="assets/img/logo1.png" width="60" height="50" alt="LogodePag" title="Logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <a href="#Inicio">
+                        <li>Inicio</li>
+                    </a>
+                    <a href="#Llamados">
+                        <li>Llamados</li>
+                    </a>
+                    <a href="#Registrarse">
+                        <li>Registrarse</li>
+                    </a>
+                    <a href="#Novedades">
+                        <li>Novedades</li>
+                    </a>
+                    <a href="#Contacto">
+                        <li>Contacto</li>
+                    </a>
+                    <a href="#Preguntas_Frecuentes">
+                        <li>Preguntas Frecuentes</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+        <section id="Inicio">
+            <div class="Bienvenidos">
+                <h1>Aca descubriras puestos de trabajos, en busca de oportunidades. 
+                </h1>
+            </div>
+
+        </section>
+        <section id="Llamados">
+            <h2>Seleccionar empresas y llamados que estas ofrecen</h2>
+            <div class="Contenedor">
+                <div class="columna1">
+                    <img src="assets/img/rey.png" alt="Rey" class="imagen-Rey">
+                    <h2>Nos dedicamos a la importación y venta de artículos e indumentaria deportiva, juguetes, ciclismo, accesorios y más con los mejores precios del mercado.</h2>
+                    <p>
+                    </p>
+                    <button class="boton-columna">Postularse</button></a>
+                    <a href="https://www.buscojobs.com.uy/trabajo/empresa/1161992/el-rey-del-entretenimiento" target="_blank">
+
+                    
+                </div>
+                <div class="columna2">
+                    <img src="assets/img/macri.png" alt="Macri"  class="imagen-Macri">
+                    <h2>Sandalias, championes, zapatos, botas, indumentaria y accesorios deportivos para toda la familia y al mejor precio.</h2>
+                    <p>
+                    </p>
+                    <button class="boton-columna">Postularse</button></a>
+                    <a href="https://www.buscojobs.com.uy/trabajo/empresa/104701/bookshop" target="_blank">
+                       
+                </div>
+                <div class="columna3">
+                    <img src="assets/img/book.png" alt="Book" class="imagen-Book">
+                    <h2>Libros busca y encuentra.</h2>
+                    <p>
+                    </p>
+                    <button class="boton-columna">Postularse</button></a>
+                    <a href="https://www.buscojobs.com.uy/trabajo/empresa/973296/starmac-s-a" target="_blank">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="Registrarse">
+            <article id="formulario">
+
+                <h3>REGISTRARSE</h3>
+                <form method="post" action="procesar_registros.php">
+                    <label>Nombre de usuario</label>
+            <input  type="text"
+                    id="nombre"
+                    name="nombre"
+                    minlength="6"
+                    maxlength="30"
+                    onkeydown="noEspacios(event)"
+                    placeholder="Nombre de usuario"
+                    required>
+
+            <label>Contraseña</label>
+            <input type="password"
+                   id="clave1"
+                   name="clave"
+                   minlength="6"
+                   oninput="verificarClave()"
+                   onkeydown="noEspacios(event)"
+                   placeholder="Escribir contraseña"
+                   required>
+           
+            <label>Verificar contraseña</label>
+            <input type="password"
+                    id="clave2"
+                    name="clave"
+                    minlength="6"
+                    oninput="verificarClave()"
+                    onkeydown="noEspacios(event)"
+                    placeholder="Verificar contraseña"
+                    required>
+
+            <label id="mensaje"></label>
+            <div style="width:390px; border-bottom:1px solid grey;"></div>
+                
+            <label>Email</label>
+            <input type="email"
+                   id="email"
+                   name="email"
+                   onkeydown="noEspacios(event)"
+                   placeholder="juanperez@mail.com"
+                   required>
+
+            <label>Celular</label>
+            <input type="tel"
+                   id="tel"
+                   name="tel"
+                   minlength="9"
+                   maxlength="9   "
+                   oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                   onkeydown="noEspacios(event)"
+                   placeholder="+598"
+                   required>
+     
+            <label>Residencia actual</label>
+            <select id="dpto" name="dpto" required>
+                <option value="Artigas">Artigas</option>
+                <option value="Canelones">Canelones</option>
+                <option value="CerroLargo">Cerro Largo</option>
+                <option value="Colonia">Colonia</option>
+                <option value="Durazno">Durazno</option>
+                <option value="Flores">Flores</option>
+                <option value="Florida">Florida</option>
+                <option value="Lavalleja">Lavalleja</option>
+                <option value="Maldonado">Maldonado</option>
+                <option value="Montevideo" selected>Montevideo</option>
+                <option value="Paysandu">Paysandú</option>
+                <option value="RioNegro">Río Negro</option>
+                <option value="Rivera">Rivera</option>
+                <option value="Rocha">Rocha</option>
+                <option value="Salto">Salto</option>
+                <option value="SanJose">San José</option>
+                <option value="Soriano">Soriano</option>
+                <option value="Tacuarembo">Tacuarembó</option>
+                <option value="TreintayTres">Treinta y Tres</option>
+            </select>
+            
+            <label>Fecha de nacimiento</label>
+            <input type="date"
+                   id="fecha"
+                   name="fecha"
+                   required>
+    
+            <label>Subir una foto de perfil</label>
+            <div class="campoFotos">
+            <input type="file"
+                   id="archivo" 
+                   name="archivo"
+                   accept=".jpg,.png"
+                   onchange="mostrarImg()">
+
+                   <img id="mostrarImagen" src="#" alt="Foto">
+            </div>
+
+
+
+        <div style="display:flex; flex-direction:row;">
+            <input type="checkbox"
+                   id="terminos"
+                   name="terminos"
+                   required>
+            <label>Aceptar términos y condiciones</label> 
+        </div>
+
+        <div class="botones">
+            <button type="submit">Enviar</button>
+            <button type="reset">Restablecer</button>
+        </div>
+
+                </form>
+            </article>
+            <script src="script.js"></script>
+        </section>
+
+        <section id="Novedades">
+
+            <div class="overlay">
+                <div class="container">
+                    <img src="assets/img/icono2.png" alt="icono2" >
+                    <h2>CURSOS DE REPONEDOR</h2>
+                    <p>Busca cursos de reponedor y llenate de conocimiento para tener una oportunidad unica.</p>
+                    
+                </div>
+
+                <div class="container">
+                    <img src="assets/img/icono1.png" alt="icono1">
+                    <h2>CURSOS DE CAJERO</h2>
+                    <p>Adentrate en el mundo de cobrar, estudia y aplica.</p>
+                    
+                </div>
+
+                <div class="container">
+                   <img src="assets/img/icono3.png" alt="icono3">
+                    <h2>MEJORA</h2>
+                    <p>Mejora en todo aspecto trabajando con nosotros.</p>
+                    
+                </div>
+             
+            </div>
+           
+        </section>
+        
+</body>
+
+
+</html>
